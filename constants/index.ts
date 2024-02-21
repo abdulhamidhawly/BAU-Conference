@@ -68,8 +68,8 @@ export const FOOTER_LINKS = [
 export const FOOTER_CONTACT_INFO = {
   title: 'Contact Us',
   links: [
-    { label: 'Admin Officer', value: '+961 3 828 977' },
-    { label: 'Email Officer', value: 'nala.makkok@bau.edu.lb' },
+    { label: 'Admin Officer', value: '+961 3 828 977', source:"/user.png"},
+    { label: 'Email Officer', value: 'nala.makkok@bau.edu.lb', source:"/email.png" },
   ],
 };
 
