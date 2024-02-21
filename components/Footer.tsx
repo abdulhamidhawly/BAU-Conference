@@ -33,6 +33,8 @@ const Footer = () => {
                     key={link.label}
                     className="flex gap-4 md:flex-col lg:flex-row"
                   >
+                    <Image src={link.source} alt='email' width='20' height='20'/>
+                      
                     <p className="whitespace-nowrap">
                       {link.label}:
                     </p>
