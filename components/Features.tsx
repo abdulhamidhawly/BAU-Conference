@@ -48,10 +48,10 @@ const Features = () => {
               onClick={() => setIndex(index - 1)}
               disabled={index === 0}
             >
-              <FaChevronLeft size={25} color="black" />
+              <FaChevronLeft size={20} color="black" />
             </button>
           </div>
-          <div className="lg:flex max-container padding-container relative w-full justify-end shadow shadow-gray-20 sm:h-[700px]">
+          <div className="lg:flex max-container padding-container relative w-full justify-end shadow shadow-gray-20 sm:h-[800px]">
             <div className="flex justify-center items-center flex-1 lg:min-h-[900px] lg:pb-40">
               <h1 className="regular-32 bold-40 lg:pb-0">
                 {R[index].session}
@@ -83,9 +83,11 @@ const Features = () => {
             onClick={() => setIndex(index + 1)}
             disabled={index === R.length - 1}
           >
-            <FaChevronRight size={25} color="black" />
+            <FaChevronRight size={20} color="black" />
           </button>
         </div>
+
+        
         <div className="flex gap-6">
 
           {/* back button */}
