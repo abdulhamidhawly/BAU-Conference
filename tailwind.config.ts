@@ -30,7 +30,7 @@ module.exports = {
         },
       },
       backgroundImage: {
-        bau : "url('/Tripoli.jpeg')",
+        tripoli : "url('/tripoli.jpg')",
         sponser1 : "url('/OrderofEngineersOEA.png')",
         sponser2 : "url('/logo-HALLAB.png')",
         sponser3 : "url('/VDL.png')",
@@ -52,7 +52,16 @@ module.exports = {
       borderRadius: {
         '5xl': '40px',
       },
+      animation: {
+        'infinite-scroll': 'infinite-scroll 25s linear infinite',
+      },
     },
+    keyframes: {
+      'infinite-scroll': {
+        from: { transform: 'translateX(0)' },
+        to: { transform: 'translateX(-100%)' },
+      }
+    }
   },
   plugins: [],
 };

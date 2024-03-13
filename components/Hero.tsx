@@ -4,7 +4,10 @@ import Button from "./Button";
 const Hero = () => {
   return (
     <>
-      <div className="h-[50vh] bg-cover bg-center bg-bau w-full "></div>
+      <div className="relative sm:h-[625px] h-96 bg-cover sm:bg-cover sm:bg-no-repeat bg-center bg-tripoli sm:w-full mx-auto">
+        {/* <div className="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-fixed"
+        style={{ backgroundColor: "rgba(0, 0, 0, 0.3)" }}></div> */}
+      </div>
       <section className="justify-content-center max-container padding-container flex flex-col gap-20 py-10 pb-32 md:gap-28 lg:py-20 xl:flex-row">
         {/* <div className="hero-map"/> */}
 
@@ -16,7 +19,7 @@ const Hero = () => {
           height={50}
           className="absolute left-[-5px] top-[-30px] w-10 lg:w-[50px]"
         /> */}
-          <h1 className="text-center bold-52 lg:bold-44">
+          <h1 className="text-center bold-18 lg:text-3xl">
             International <span className="text-blue-500">Immigration</span>   Conference
           </h1>
           <div className="w-full flex flex-col justify-content-center regular-18 mt-6 -mb-24 lg:-mb-0 text-gray-30">

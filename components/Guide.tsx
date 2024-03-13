@@ -87,15 +87,11 @@ const Guide = () => {
       </div>
 
       <div className="flexCenter max-container relative w-[70%]">
-        <Image
-          src="/bau2.jpg"
-          alt="boat"
-          width={1000}
-          height={80}
-          className="w-full object-cover object-center 2xl:rounded-5xl"
-        />
+        <div className="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-fixed 2xl:rounded-5xl"
+         style={{backgroundColor:"rgba(0, 0, 0, 0.2)"}}>
+         </div>
 
-        <div className="absolute flex bg-white py-8 pl-5 pr-7 gap-3 rounded-3xl border shadow-md md:left-[5%] lg:top-20">
+         <div className="absolute sm:-right-7 flex bg-blue-500 py-8 pl-5 pr-7 gap-10 rounded-3xl shadow-md lg:-top-14 sm:w-[500px] w-[360px]">
           <Image
             src="/meter.svg"
             alt="meter"
@@ -103,25 +99,31 @@ const Guide = () => {
             height={158}
             className="h-full w-auto"
           />
-          <div className="flexBetween flex-col">
+          <div className="flexBetween flex-col ">
             <div className="flex w-full flex-col">
               <div className="flexBetween w-full">
-                <p className="regular-16 text-gray-20">Location</p>
-                <p className="bold-16 text-blue-500"></p>
+                <p className="regular-16 text-white bold-20">Location</p>
               </div>
-              <p className="bold-20 mt-2">
+              <p className="sm:bold-16  text-white max-sm:mr-20">
                 Beirut Arab University - Tripoli Campus
               </p>
             </div>
 
             <div className="flex w-full flex-col">
-              <p className="regular-16 text-gray-20">Time</p>
-              <h4 className="bold-20 mt-2 whitespace-nowrap">
+              <p className="regular-16 text-white bold-20">Time</p>
+              <h4 className="sm:bold-16 mt-2 whitespace-nowrap text-white max-sm:mr-20 ">
                 Friday & Saturday May 5 & 6, 2023
               </h4>
             </div>
           </div>
         </div>
+        <Image
+          src="/bau2.jpg"
+          alt="boat"
+          width={1000}
+          height={80}
+          className="w-full object-cover object-center 2xl:rounded-5xl"
+        />
       </div>
     </section>
   );

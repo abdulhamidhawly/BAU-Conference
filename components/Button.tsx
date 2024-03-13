@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { ButtonHTMLAttributes, HtmlHTMLAttributes } from "react";
 
 type ButtonProps = {
   type: 'button' | 'submit';
@@ -6,7 +7,7 @@ type ButtonProps = {
   icon?: string;
   variant: string;
   full?: boolean;
-}
+}&ButtonHTMLAttributes<any>
 
 const Button = ({ type, title, icon, variant, full }: ButtonProps) => {
   return (

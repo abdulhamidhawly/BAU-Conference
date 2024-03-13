@@ -16,12 +16,13 @@ export const PEOPLE_URL = [
 
 // FEATURES SECTION
 export const FEATURES = [
-  {
+    {
     title: 'Prof. Jassem Ajaka',
     icon: '/map.svg',
     variant: 'green',
     description:
       'PROFESSOR OF QUANTUM MECHANICS, PARTICLE PHYSICS & ECONOMICS, AT THE LEBANESE UNIVERSITY',
+      topic: 'Software Eng'
   },
   {
     title: 'Dr. Nassib Ghobril',
@@ -29,6 +30,7 @@ export const FEATURES = [
     variant: 'green',
     description:
       "CHIEF ECONOMIST AND HEAD OF THE ECONOMIC RESEARCH & ANALYSIS DEPARTMENT AT THE BYBLOS BANK GROUP",
+      topic: 'Software Eng'
   },
   {
     title: 'Mr. Ziad Alexandre Hayek',
@@ -36,6 +38,7 @@ export const FEATURES = [
     variant: 'green',
     description:
       'PRESIDENT OF THE WORLD ASSOCIATION OF PPP UNITS AND PROFESSIONALS;',
+      topic: 'Software Eng'
   },
   {
     title: 'Dr. Sami Nader',
@@ -43,9 +46,113 @@ export const FEATURES = [
     variant: 'orange',
     description:
       'DIRECTOR OF INSTITUTE OF POLITICAL SCIENCE AT SAINT JOSEPH UNIVERSITY; MANAGING PARTNER AT OAK ASSOCIATES',
+      topic: 'Software Eng'
+  },
+];
+export const FEATURES2 = [
+    {
+    title: 'Prof. Mustafa',
+    icon: '/map.svg',
+    variant: 'green',
+    description:
+      'PROFESSOR OF QUANTUM MECHANICS, PARTICLE PHYSICS & ECONOMICS, AT THE LEBANESE UNIVERSITY',
+      topic: 'Software Eng'
+  },
+  {
+    title: 'Dr. Ahmad',
+    icon: '/calendar.svg',
+    variant: 'green',
+    description:
+      "CHIEF ECONOMIST AND HEAD OF THE ECONOMIC RESEARCH & ANALYSIS DEPARTMENT AT THE BYBLOS BANK GROUP",
+      topic: 'Software Eng'
+  },
+  {
+    title: 'Mr. Ralph',
+    icon: '/tech.svg',
+    variant: 'green',
+    description:
+      'PRESIDENT OF THE WORLD ASSOCIATION OF PPP UNITS AND PROFESSIONALS;',
+      topic: 'Software Eng'
+  },
+  {
+    title: 'Dr. Zeid',
+    icon: '/location.svg',
+    variant: 'orange',
+    description:
+      'DIRECTOR OF INSTITUTE OF POLITICAL SCIENCE AT SAINT JOSEPH UNIVERSITY; MANAGING PARTNER AT OAK ASSOCIATES',
+      topic: 'Software Eng'
   },
 ];
 
+export const FEATURES3 = [
+  {
+  title: 'Prof. mounir',
+  icon: '/map.svg',
+  variant: 'green',
+  description:
+    'PROFESSOR OF QUANTUM MECHANICS, PARTICLE PHYSICS & ECONOMICS, AT THE LEBANESE UNIVERSITY',
+    topic: 'Software Eng'
+},
+{
+  title: 'Dr. abdallah',
+  icon: '/calendar.svg',
+  variant: 'green',
+  description:
+    "CHIEF ECONOMIST AND HEAD OF THE ECONOMIC RESEARCH & ANALYSIS DEPARTMENT AT THE BYBLOS BANK GROUP",
+    topic: 'Software Eng'
+},
+{
+  title: 'Mr. nader',
+  icon: '/tech.svg',
+  variant: 'green',
+  description:
+    'PRESIDENT OF THE WORLD ASSOCIATION OF PPP UNITS AND PROFESSIONALS;',
+    topic: 'Software Eng'
+},
+{
+  title: 'Dr. maher',
+  icon: '/location.svg',
+  variant: 'orange',
+  description:
+    'DIRECTOR OF INSTITUTE OF POLITICAL SCIENCE AT SAINT JOSEPH UNIVERSITY; MANAGING PARTNER AT OAK ASSOCIATES',
+    topic: 'Software Eng'
+},
+];
+
+export const FEATUREONE = [
+  {
+    title: 'Prof. Ahmad Shakik',
+    icon: '/map.svg',
+    variant: 'green',
+    description:
+      'PROFESSOR OF QUANTUM MECHANICS, PARTICLE PHYSICS & ECONOMICS, AT THE LEBANESE UNIVERSITY',
+      topic: 'Software Eng'
+  },
+  {
+    title: 'Dr. Abed Hawli',
+    icon: '/calendar.svg',
+    variant: 'green',
+    description:
+      "CHIEF ECONOMIST AND HEAD OF THE ECONOMIC RESEARCH & ANALYSIS DEPARTMENT AT THE BYBLOS BANK GROUP",
+      topic: 'Software Eng'
+  },
+  {
+    title: 'Mr. Mohamad Zeid',
+    icon: '/tech.svg',
+    variant: 'green',
+    description:
+      'PRESIDENT OF THE WORLD ASSOCIATION OF PPP UNITS AND PROFESSIONALS;',
+      topic: 'Software Eng'
+  },
+  {
+    title: 'Dr. Mustafa Khodor',
+    icon: '/location.svg',
+    variant: 'orange',
+    description:
+      'DIRECTOR OF INSTITUTE OF POLITICAL SCIENCE AT SAINT JOSEPH UNIVERSITY; MANAGING PARTNER AT OAK ASSOCIATES',
+      topic: 'Software Eng'
+  },
+];
 // FOOTER SECTION
 export const FOOTER_LINKS = [
   {
@@ -68,8 +175,8 @@ export const FOOTER_LINKS = [
 export const FOOTER_CONTACT_INFO = {
   title: 'Contact Us',
   links: [
-    { label: 'Admin Officer', value: '+961 3 828 977', source:"/user.png"},
-    { label: 'Email Officer', value: 'nala.makkok@bau.edu.lb', source:"/email.png" },
+    { label: 'Admin Officer', value: '+961 3 955 455', source:"/user.png"},
+    { label: 'Email Officer', value: 'abdalla.elchakik@bau.edu.lb', source:"/email.png" },
   ],
 };
 
