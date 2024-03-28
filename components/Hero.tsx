@@ -5,6 +5,13 @@ const Hero = () => {
   return (
     <>
       <div className="relative sm:h-[625px] h-96 bg-cover sm:bg-cover sm:bg-no-repeat bg-center bg-tripoli sm:w-full mx-auto">
+        <div className=" md:p-8 md:py-48 max-sm:py-24">
+        <div className="  text-4xl font-semibold max-sm:text-base max-sm:px-3 ">
+          <p className=" text-white ">Immigrant Empowerment initiative in the North.</p>
+          <span className="text-white">Bridging borders, Building futures.</span>
+          <p className="text-white mt-2 font-bold md:text-5xl text-justify">YES WE CAN #2</p>
+        </div>
+        </div>
         {/* <div className="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-fixed"
         style={{ backgroundColor: "rgba(0, 0, 0, 0.3)" }}></div> */}
       </div>

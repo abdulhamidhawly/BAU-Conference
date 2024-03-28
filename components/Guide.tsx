@@ -17,8 +17,8 @@ const Guide = () => {
               The aim of the conference is to:
             </p>
             <li className="flex items-center space-x-3 rtl:space-x-reverse">
-              <svg
-                className="flex-shrink-0 w-3.5 h-3.5 text-blue-500-500 dark:text-blue-500-400"
+            <svg
+                className="flex-shrink-0 w-3.5 h-3.5 text-blue-500 dark:text-blue-500"
                 aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -38,8 +38,8 @@ const Guide = () => {
               </span>
             </li>
             <li className="flex items-center space-x-3 rtl:space-x-reverse">
-              <svg
-                className="flex-shrink-0 w-3.5 h-3.5 text-blue-500-500 dark:text-blue-500-400"
+            <svg
+                className="flex-shrink-0 w-3.5 h-3.5 text-blue-500 dark:text-blue-500"
                 aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
