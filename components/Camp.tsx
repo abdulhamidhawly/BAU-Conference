@@ -75,7 +75,7 @@ const CampSite = ({
 const Camp = () => {
   return (
     <section className="2xl:max-container relative flex flex-col">
-      <div className="flexEnd lg:mr-6">
+      <div className="flexEnd lg:mr-36">
         <div className="bg-blue-500 mt-10 lg:-mt-0 p-4 lg:p-8 max-sm:m-20 xl:max-w-[600px] xl:max-h-[200px] xl:rounded-5xl xl:py-8 relative overflow-hidden rounded-5xl ">
           <h1 className="text-5xl capitalize text-white px-7 py-2 max-sm:text-base">
             <strong>OUR SPONSORS </strong>

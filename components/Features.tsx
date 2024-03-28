@@ -22,7 +22,7 @@ const Features = () => {
     <div>
       <section className="flex-col flexCenter overflow-hidden bg-feature-bg bg-center bg-no-repeat py-24">
         <div className="sm:flex sm:justify-end sm:w-[1850px] sm:-ml-96 sm:mb-8">
-          <div className="lg:mr-6">
+          <div className="lg:mr-36">
             <div className="bg-blue-500 mt-10 lg:-mt-0 p-4 lg:p-8 max-sm:m-14 xl:max-h-[200px] xl:rounded-5xl xl:py-8 relative overflow-hidden rounded-5xl">
               <h1 className="text-5xl capitalize text-white px-7 py-2 max-sm:text-base">
                 <strong>OUR SPEAKERS</strong>
@@ -40,7 +40,7 @@ const Features = () => {
 
         <div className="w-full flex items-center justify-center sm:px-10">
           {/* back button */}
-          <div className="h-[100%] max-sm:hidden">
+          <div className="h-[100%] max-sm:hidden p-2">
             <button
               className={`mt-4 border border-1  text-white p-3 rounded-full ${
                 index === 0 ? "bg-gray-100" : ""
@@ -76,6 +76,7 @@ const Features = () => {
           </div>
 
           {/* next button */}
+          <div className="p-2">
           <button
             className={`mt-4 border border-1 text-white p-3 rounded-full max-sm:hidden ${
               index === R.length - 1 ? "bg-gray-100" : ""
@@ -85,6 +86,8 @@ const Features = () => {
           >
             <FaChevronRight size={20} color="black" />
           </button>
+          </div>
+         
         </div>
 
         
