@@ -106,7 +106,7 @@ const Form = () => {
           <form className="md:col-span-2 w-full py-6 px-6 sm:px-16">
             <div className="mb-6">
               <h3 className="text-lg font-bold text-center">
-                Immigrant Empowerment Conference <span className="text-blue-500">Register Here !</span> 
+                Immigrant Empowerment Conference Registration
               </h3>
             </div>
             <div className="space-y-5">
