@@ -33,7 +33,7 @@ const Form = () => {
         file: file,
       });
     } else {
-      toast.error("Please upload a JPG or PNG file."{
+      toast.error("Please upload a JPG or PNG file.",{
         position: "top-center",
       });
       setFormData({
