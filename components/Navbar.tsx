@@ -5,10 +5,25 @@ import Button from "./Button"
 
 const Navbar = () => {
   return (
-    <nav className="flexBetween relative py-1 px-16">
+    <nav className="flexBetween relative py-1 px-16 max-sm:px-2">
+      <div  className="max-sm:flex max-sm:w-full max-sm:justify-between max-sm:items-center ">
       <Link href="/">
-        <Image src="/bauLogo.jpg" alt="logo" width={300} height={35} />
+        <Image src="/bauLogo.jpg" alt="logo" width={300} height={35} className="max-sm:hidden"/>
+        <Image src="/bauLogo.jpg" alt="logo" width={200} height={35} className="lg:hidden"/>
       </Link>
+      <div className="lg:hidden border border-gray-300 rounded-md px-8 regular-16 text-black font-bold border-b-2 py-2">
+      <Link href={"/register"} className="flex gap-2">
+      <Image src='/register.png' alt='email' width='25' height='25'/>
+      <p>Register</p>
+      </Link>
+      </div>
+      </div>
+      {/* <Image src="/halfa.PNG" alt="logo" width={300} height={15} />
+      <Image src="/LEC.PNG" alt="logo" width={300} height={35} />
+      <Image src="/austr.png" alt="logo" width={300} height={35} />
+      <Image src="/CCIAT.jpg" alt="logo" width={150} height={15} /> */}
+
+
 
       <ul className="hidden h-full gap-12 lg:flex">
         {NAV_LINKS.map((link) => (
@@ -17,8 +32,8 @@ const Navbar = () => {
           </Link>
         ))}
       </ul>
-{/* 
-      <div className="lg:flexCenter hidden">
+
+      {/* <div className="lg:flexCenter hidden">
         <Button 
           type="button"
           title="Login"
