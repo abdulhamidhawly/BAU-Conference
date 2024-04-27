@@ -53,7 +53,7 @@ const Form = () => {
     formDataToSend.append("phoneNumber", formData.phoneNumber);
     formDataToSend.append("company", formData.company);
     formDataToSend.append("email", formData.email);
-    formDataToSend.append("file", formData.file);
+    formDataToSend.append("file", formData.file!);
     formDataToSend.append("position", formData.position);
     // Assuming formData.file is the file input element
 
