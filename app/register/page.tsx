@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React, { useState } from "react";
 import axios from "axios";
 import { toast } from "sonner";
@@ -15,7 +15,7 @@ const Form = () => {
 
   const [isCreating, setIsCreating] = useState(false);
 
-  const handleInputChange = (e:any) => {
+  const handleInputChange = (e: any) => {
     const { name, value } = e.target;
     setFormData({
       ...formData,
@@ -23,17 +23,17 @@ const Form = () => {
     });
   };
 
-  const handleFileChange = (e:any) => {
-    const file = e.target.files[0]; 
-    
-    console.log(file.type)
+  const handleFileChange = (e: any) => {
+    const file = e.target.files[0];
+
+    console.log(file.type);
     if (file && (file.type === "image/jpeg" || file.type === "image/png")) {
       setFormData({
         ...formData,
         file: file,
       });
     } else {
-      toast.error("Please upload a JPG or PNG file.",{
+      toast.error("Please upload a JPG or PNG file.", {
         position: "top-center",
       });
       setFormData({
@@ -43,7 +43,7 @@ const Form = () => {
     }
   };
 
-  const handleSubmit = async (e:any) => {
+  const handleSubmit = async (e: any) => {
     e.preventDefault();
     setIsCreating(true);
 
@@ -59,7 +59,10 @@ const Form = () => {
 
     try {
       // Send the FormData to the server
-      await axios.post("https://online-registration-backend.vercel.app/submit-form", formDataToSend);
+      await axios.post(
+        "https://online-registration-backend.vercel.app/submit-form",
+        formDataToSend
+      );
 
       // Handle response
       // Check if response contains a PDF link
@@ -75,8 +78,8 @@ const Form = () => {
         email: "",
         position: "",
         file: null, // New state for file
-      })
-    } catch (error:any) {
+      });
+    } catch (error: any) {
       setIsCreating(false);
       toast.error(error.message);
 
@@ -87,13 +90,9 @@ const Form = () => {
 
   return (
     <>
-    
-
-    
-
       <div className="font-[sans-serif] text-gray-800 bg-white max-w-4xl flex items-center mx-auto md:h-screen p-4 mb-12">
         <div className="grid md:grid-cols-3 items-center shadow-[0_2px_10px_-3px_rgba(6,81,237,0.3)] rounded-xl overflow-hidden">
-          <div className="max-md:order-1 flex flex-col justify-center space-y-16 max-md:mt-16 min-h-full bg-gradient-to-r from-gray-900 to-gray-700 lg:px-8 px-4 py-4">
+          {/* <div className="max-md:order-1 flex flex-col justify-center space-y-16 max-md:mt-16 min-h-full bg-gradient-to-r from-gray-900 to-gray-700 lg:px-8 px-4 py-4">
             <div>
               <h4 className="text-white text-lg font-semibold text-center">
                 BAU Registration
@@ -103,10 +102,12 @@ const Form = () => {
                 account.
               </p>
             </div>
-          </div>
+          </div> */}
           <form className="md:col-span-2 w-full py-6 px-6 sm:px-16">
             <div className="mb-6">
-              <h3 className="text-2xl font-bold text-center">Register Here !</h3>
+              <h3 className="text-lg font-bold text-center">
+                Immigrant Empowerment Conference <span className="text-blue-500">Register Here !</span> 
+              </h3>
             </div>
             <div className="space-y-5">
               <div>
@@ -142,7 +143,7 @@ const Form = () => {
                 </div>
               </div>
               <div>
-                <label className="text-sm mb-2 block"> Upload File</label>
+                <label className="text-sm mb-2 block"> Upload Your Photo</label>
 
                 <label htmlFor="file-input" className="sr-only">
                   Choose file
@@ -291,23 +292,20 @@ dark:file:text-neutral-400"
                 className="w-full py-3 px-4 text-sm font-semibold rounded text-white bg-gray-700 hover:bg-gray-800 focus:outline-none"
               >
                 {isCreating ? (
-                      <div
-                        style={{
-                          display: "flex",
-                          alignItems: "center",
-                          justifyContent: "center",
-                        }}
-                      >
-                        <div
-                          className="spinner-border text-white"
-                          role="status"
-                        >
-                          <span className="sr-only">Loading...</span>
-                        </div>
-                      </div>
-                    ) : (
-                      "Register"
-                    )}
+                  <div
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                    }}
+                  >
+                    <div className="spinner-border text-white" role="status">
+                      <span className="sr-only">Loading...</span>
+                    </div>
+                  </div>
+                ) : (
+                  "Register"
+                )}
               </button>
             </div>
           </form>
