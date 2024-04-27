@@ -68,6 +68,14 @@ const Form = () => {
       });
 
       setIsCreating(false);
+      setFormData({
+        name: "",
+        phoneNumber: "",
+        company: "",
+        email: "",
+        position: "",
+        file: null, // New state for file
+      })
     } catch (error:any) {
       setIsCreating(false);
       toast.error(error.message);
