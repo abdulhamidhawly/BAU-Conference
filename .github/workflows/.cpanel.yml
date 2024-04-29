@@ -1,0 +1,5 @@
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/immigrantconf/repositories/BAU-Conference/public_html/
+    - /bin/cp index.html /home/immigrantconf/repositories/BAU-Conference/public_html/
+    - /bin/cp style.css  /home/immigrantconf/repositories/BAU-Conference/public_html/
